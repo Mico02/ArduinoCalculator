@@ -7,11 +7,11 @@
 // add-op -> + | -
 // mult-op -> * | /
 // number -> any unsigned number in the range of int16_t
+//Value that keeps track of what token is currenltly on
 
 
 //Token values that represent +,-,*,/,(,)
-#define PLUS -111
-#define PLUSIR -111
+#define PLUS -1
 #define MINUS -2
 #define TIMES -3
 #define DIVIDE -4

@@ -1,8 +1,6 @@
-#pragma once
 #include "Evaluator.h"
-
-//Value that keeps track of what token is currenltly on
 uint8_t tokenIndex = 0;
+
 
 int16_t valueOfExpr(int16_t tokens[]){
     int16_t value = valueOfTerm(tokens);
@@ -15,6 +13,7 @@ int16_t valueOfExpr(int16_t tokens[]){
             value -= valueOfTerm(tokens);
         }
     }
+    tokenIndex = 0;
     return value;
 }
 
